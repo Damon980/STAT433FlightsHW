@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 #Part 1
 
-library(tidyverse)
-library(nycflights13)
-library(lubridate)
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(nycflights13))
+suppressPackageStartupMessages(library(lubridate))
 df = flights
 
 MissingDep = filter(df, is.na(dep_time))
